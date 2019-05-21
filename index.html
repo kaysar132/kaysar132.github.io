@@ -166,103 +166,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1、简答题"><a href="#1、简答题" class="headerlink" title="1、简答题"></a>1、简答题</h2><h3 id="1-用例的概念"><a href="#1-用例的概念" class="headerlink" title="1.用例的概念"></a>1.用例的概念</h3><blockquote>
-<p>用例是描述参与者使用系统支持目标的相关成功和失败场景的集合。</p>
-</blockquote>
-<h3 id="2-用例和场景的关系？什么是主场景或-happy-path"><a href="#2-用例和场景的关系？什么是主场景或-happy-path" class="headerlink" title="2.用例和场景的关系？什么是主场景或 happy path?"></a>2.用例和场景的关系？什么是主场景或 happy path?</h3><blockquote>
-<p>用例表示一组场景:主场景，加上零个或多个替代场景。主要场景对应于主要的系统交互，通常是“成功”场景。</p>
-</blockquote>
-<h3 id="3-用例有哪些形式？"><a href="#3-用例有哪些形式？" class="headerlink" title="3.用例有哪些形式？"></a>3.用例有哪些形式？</h3><blockquote>
-<p>Brief (high level)、Casual（简便格式）、Fully。</p>
-</blockquote>
-<h3 id="4-对于复杂业务，为什么编制完整用例非常难？"><a href="#4-对于复杂业务，为什么编制完整用例非常难？" class="headerlink" title="4.对于复杂业务，为什么编制完整用例非常难？"></a>4.对于复杂业务，为什么编制完整用例非常难？</h3><blockquote>
-<p>对于复杂业务来说，一般会涉及到的场景会比较多，然后我们会把整个业务分成很多子业务来处理，每一个子业务都要绘制出其用例图，并且还需要把相互联系的子业务进行处理，这样下来整个过程就显得很复杂，客户理解起来比较困难。</p>
-</blockquote>
-<h3 id="5-什么是用例图？"><a href="#5-什么是用例图？" class="headerlink" title="5.什么是用例图？"></a>5.什么是用例图？</h3><blockquote>
-<p>用例图是用来描述参与者、用例之间的关系的图，用例图非常简洁、清楚的被客户所理解项目的功能、行为等。非常清楚的描述了项目的需求、功能以及相关的行为，项目用例图是分析、设计直至组装测试的重要依据。</p>
-</blockquote>
-<h3 id="6-用例图的基本符号与元素？"><a href="#6-用例图的基本符号与元素？" class="headerlink" title="6.用例图的基本符号与元素？"></a>6.用例图的基本符号与元素？</h3><blockquote>
-<ul>
-<li><p>参与者：是指系统以外的，在使用系统或与系统交互中所扮演的角色。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\actor.png" alt="参与者"></p>
-</li>
-<li><p>用例：是对包括变量在内的一组动作序列的描述，系统执行这些动作，并产生传递特定参与者的价值的可观察结果。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\useCase.png" alt="用例"></p>
-</li>
-<li><p>包含关系：一个用例可以简单地包含其他用例具有的行为，并把它所包含的用例行为作为自身的一部分。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\include.png" alt="包含关系"></p>
-</li>
-<li><p>扩展关系：是一个用例被定义为基础用例的增量扩展，通过扩展关系把新的行为插入到已有用例中。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\extend.png" alt="扩展关系"></p>
-</li>
-<li><p>关联关系：描述参与者与用例之间的关系，用于表示类的关系的关联元素的实例。表示参与者与用例之间的通信，不同的参与者可以访问同一个用例。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\relevance.png" alt="关联关系"></p>
-</li>
-<li><p>泛化关系：一个用例可以被特别列举为一个或多个子用例。当父用例能够被使用时，任何子用例也可以被使用。</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\generalize.png" alt="泛化关系"></p>
-</li>
-</ul>
-</blockquote>
-<h3 id="7-用例图的画法与步骤"><a href="#7-用例图的画法与步骤" class="headerlink" title="7.用例图的画法与步骤"></a>7.用例图的画法与步骤</h3><blockquote>
-<ul>
-<li>首先提取参与者</li>
-<li>然后确定用例</li>
-<li>确定参与者与用例之间的关系</li>
-<li>最后按照已经确定的关系，使用用例图的规范绘制出用例图</li>
-</ul>
-</blockquote>
-<h3 id="8-用例图给利益相关人与开发者的价值有哪些？"><a href="#8-用例图给利益相关人与开发者的价值有哪些？" class="headerlink" title="8.用例图给利益相关人与开发者的价值有哪些？"></a>8.用例图给利益相关人与开发者的价值有哪些？</h3><blockquote>
-<p>用例图对于开发人员来说设计难度不大，并且可以非常清楚的描述需求、功能等非常方便，对后期的测试并改进具有非常好的指导作用。简单地说，用例图绘制简单，功能非常强大，所以大大提高一个项目的完成效率，这样对于利于相关人来说降低了成本。</p>
-</blockquote>
-<h2 id="2、建模练习题（用例模型）"><a href="#2、建模练习题（用例模型）" class="headerlink" title="2、建模练习题（用例模型）"></a>2、建模练习题（用例模型）</h2><ul>
-<li><h5 id="选择2-3个你熟悉的类似业务的在线服务系统（或移动-APP），如定旅馆（携程、去哪儿等）、定电影票、背单词APP等，分别绘制它们用例图。并满足以下要求："><a href="#选择2-3个你熟悉的类似业务的在线服务系统（或移动-APP），如定旅馆（携程、去哪儿等）、定电影票、背单词APP等，分别绘制它们用例图。并满足以下要求：" class="headerlink" title="选择2-3个你熟悉的类似业务的在线服务系统（或移动 APP），如定旅馆（携程、去哪儿等）、定电影票、背单词APP等，分别绘制它们用例图。并满足以下要求："></a>选择2-3个你熟悉的类似业务的在线服务系统（或移动 APP），如定旅馆（携程、去哪儿等）、定电影票、背单词APP等，分别绘制它们用例图。并满足以下要求：</h5><ul>
-<li>请使用用户的视角，描述用户目标或系统提供的服务</li>
-<li>粒度达到子用例级别，并用 include 和 exclude 关联它们</li>
-<li>请用色彩标注出你认为创新（区别于竞争对手的）用例或子用例</li>
-<li>尽可能识别外部系统和服</li>
-</ul>
-<blockquote>
-<ul>
-<li>购买电影票</li>
-</ul>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\buyTicket.png" alt="电影票"></p>
-<ul>
-<li><p>背单词</p>
-<p><img src="/2019/05/21/Week-6/Github\hexo\source\_posts\Week-6\beidanci.png" alt="背单词"></p>
-</li>
-</ul>
-</blockquote>
-</li>
-<li><h5 id="然后，回答下列问题："><a href="#然后，回答下列问题：" class="headerlink" title="然后，回答下列问题："></a>然后，回答下列问题：</h5><ol>
-<li><p>为什么相似系统的用例图是相似的？</p>
-<blockquote>
-<p>因为基本的大的功能模块类似，比如购买各种票的系统功能其实都一样，只是UI设计方面有所不同，所以只要是功能模块类似的，用例图基本上也是类似的。</p>
-</blockquote>
-</li>
-<li><p>如果是定旅馆业务，请对比 Asg_RH 用例图，简述如何利用不同时代、不同地区产品的用例图，展现、突出创新业务和技术。</p>
-<blockquote>
-<p>随着年代的不同，订旅馆的业务功能上在不断地增加一些新的功能模块，按照地区的不同也存在一些功能、需求方面的不同，这跟当地的一些风俗习惯、文化、饮食习惯等有一定的关系。</p>
-</blockquote>
-</li>
-<li><p>如何利用用例图定位创新思路（业务创新、或技术创新、或商业模式创新）在系统中的作用。</p>
-<blockquote>
-<p>我个人觉得，首先我们自己在某一个方面比较好的项目的用例图好好的去研究，再跟当前的社会现状相互联系起来，想想有没有还可以加的功能模块，如果我们找到合适的，那我们对原来的那个进行更新，这个在我看来也算是一个很好的创新。这个过程中用例图的作用就非常强大，用例图帮助我们更好的、更清楚的了解项目需求及功能，让我们更快、更好的发现问题及解决问题。</p>
-</blockquote>
-</li>
-<li><p>请使用 SCRUM 方法，选择一个用例图，编制某定旅馆开发的需求（backlog）开发计划表。</p>
-<blockquote>
-<p>| ID   | Title               | Imp  | Est  | How to demo                                                  | Notes               |<br>| —- | ——————- | —- | —- | ———————————————————— | ——————- |<br>| 1    | find hotel          | 40   | 30   | 能够在列表上看到各个旅馆的基本信息，选中之后会跳到详情信息页面 |                     |<br>| 2    | make reservation    | 30   | 40   | 按照日期、房间大小、价格进行预订                             |                     |<br>| 3    | make payment        | 30   | 30   | 选择支付方式，进行付款                                       | 用对应的API进行付款 |<br>| 4    | choose hotel        | 10   | 10   | 选择一个自己喜欢的旅馆                                       |                     |<br>| 5    | choose room         | 10   | 20   | 选择好旅馆之后，再来选择合适的房间                           |                     |<br>| 6    | confirm reservation | 10   | 10   | 确定自己想要预定的房间进行确认                               |                     |<br>| 7    | manage basket       | 20   | 20   | 已经确认要预定的房间会进入到管理框里                         |                     |<br>| 8    | pay by mastercard   | 20   | 10   | 通过卡进行对已经预定的订单进行付款                           | 用对应的API         |<br>| 9    | sort hotel          | 10   | 10   | 对旅馆进行分类                                               |                     |</p>
-</blockquote>
-</li>
-<li><p>根据任务4，参考 <a href="https://www.ibm.com/developerworks/cn/rational/edge/09/mar09/collaris_dekker/index.html" target="_blank" rel="noopener">使用用例点估算软件成本</a>，给出项目用例点的估算</p>
-<blockquote>
-<p>| 用例                | #事务 | #计算 | 原因 | UC权重 |<br>| ——————- | —– | —– | —- | —— |<br>| find hotel          | 7     | 4     |      | 一般   |<br>| make reservation    | 4     | 3     |      | 一般   |<br>| make payment        | 4     | 2     |      | 一般   |<br>| choose hotel        | 3     | 3     |      | 简单   |<br>| choose room         | 5     | 3     |      | 一般   |<br>| confirm reservation | 2     | 2     |      | 简单   |<br>| manage basket       | 3     | 3     |      | 简单   |<br>| pay by mastercard   | 2     | 2     |      |        |<br>| sort hotel          | 4     | 2     |      |        |</p>
-</blockquote>
-</li>
-</ol>
-</li>
-</ul>
-
+        <h2 id="1、简答题"><a href="#1、简答题" class="headerlink" title="1、简答题"></a>1、简答题</h2>
+        
+          <a class="article-more-a" href="/2019/05/21/Week-6/#more">more >></a>
+        
       
 
       
