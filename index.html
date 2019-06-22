@@ -153,7 +153,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/06/21/Week-9/">Week-9</a>
+      <a class="article-title" href="/2019/06/21/Week-9/">Week 9</a>
     </h1>
   
 
@@ -173,44 +173,12 @@
 <li>属性要注意计算字段</li>
 </ul>
 </li>
-<li>数据建模，为了简化描述仅需要给出表清单，例如：<ul>
-<li>Hotel（ID/Key，Name，LoctionID/Fkey，Address…..）</li>
-</ul>
-</li>
-</ul>
-<blockquote>
+<li><p>数据建模，为了简化描述仅需要给出表清单，例如：</p>
 <ul>
-<li><p>make reservation 领域建模：</p>
-<p><img src="/2019/06/21/Week-9/1.png" alt></p>
-<ul>
-<li>Traveler(ID/Key,RID/FKey,name,email)</li>
-<li>Reservation(ID/Key,TID/FKey,HID/FKey,date,number of nights)</li>
-<li>ReserveItem(ID/Key,RoomID/FKey,RID/FKey,check in date,check out date,number of nights,adult num, child num,child age)</li>
-<li>Hotel(ID/Key,RID/FKey,name,address,favourite,price,rating)</li>
-<li>Room(ID/Key,HID/FKey,RDID/FKey,date,type,isAvailable,price)</li>
-<li>Location(ID/Key,favourite)</li>
-<li>RoomDesc(ID/Key,RID/FKey,type,total,list-price,description)</li>
-</ul>
-</li>
-<li><p>payment领域建模</p>
-<p><img src="/2019/06/21/Week-9/2.png" alt></p>
-<ul>
-<li>traveler(ID/Key,name,email)</li>
-<li>Credit card(ID/Key,TID/FKey,id number, type)</li>
-<li>Payment(ID/Key,date,total,CID/FKey)</li>
-<li>Card detail(ID/Key,CID/FKey,id number,password)</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<h3 id="2-使用-UML-State-Model，对每个订单对象生命周期建模"><a href="#2-使用-UML-State-Model，对每个订单对象生命周期建模" class="headerlink" title="2.使用 UML State Model，对每个订单对象生命周期建模"></a>2.使用 UML State Model，对每个订单对象生命周期建模</h3><ul>
-<li>建模对象： 参考 Asg_RH 文档， 对 Reservation/Order 对象建模。</li>
-<li>建模要求： 参考练习不能提供足够信息帮助你对订单对象建模，请参考现在 定旅馆 的旅游网站，尽可能分析围绕订单发生的各种情况，直到订单通过销售事件（柜台销售）结束订单。</li>
-</ul>
-<blockquote>
-<p><img src="/2019/06/21/Week-9/3.png" alt></p>
-</blockquote>
-
+<li><p>Hotel（ID/Key，Name，LoctionID/Fkey，Address…..）</p></li></ul></li></ul>
+        
+          <a class="article-more-a" href="/2019/06/21/Week-9/#more">more >></a>
+        
       
 
       
